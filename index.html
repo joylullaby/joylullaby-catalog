@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0062)file:///C:/Users/DSF/Downloads/Inventario%20Carters/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JoyLullaby - Sistema de Inventario</title>
     <style>
@@ -670,11 +670,11 @@
         <div class="stats-container">
             <div class="stat-card">
                 <div class="stat-label">Total Productos</div>
-                <div class="stat-value" id="totalProducts">0</div>
+                <div class="stat-value" id="totalProducts">14</div>
             </div>
             <div class="stat-card">
                 <div class="stat-label">Total Unidades</div>
-                <div class="stat-value" id="totalUnits">0</div>
+                <div class="stat-value" id="totalUnits">161</div>
             </div>
             <div class="stat-card stat-warning">
                 <div class="stat-label">⚠️ Stock Bajo</div>
@@ -682,7 +682,7 @@
             </div>
             <div class="stat-card">
                 <div class="stat-label">Mayor Stock</div>
-                <div class="stat-value" id="maxStock">-</div>
+                <div class="stat-value" id="maxStock">Bodysuit Unisex Blanco Sin Manga (67)</div>
             </div>
         </div>
     </div>
@@ -693,13 +693,7 @@
             ➕ Agregar Producto
         </button>
         <div class="search-filters">
-            <input 
-                type="text" 
-                class="search-input" 
-                id="searchInput" 
-                placeholder="Buscar por código o nombre..."
-                onkeyup="filterProducts()"
-            >
+            <input type="text" class="search-input" id="searchInput" placeholder="Buscar por código o nombre..." onkeyup="filterProducts()">
             <select class="filter-select" id="categoryFilter" onchange="filterProducts()">
                 <option value="">Todas las categorías</option>
                 <option value="Bodysuits">Bodysuits</option>
@@ -752,7 +746,721 @@
         </div>
 
         <div id="messageContainer"></div>
-        <div id="productsGrid" class="products-grid"></div>
+        <div id="productsGrid" class="products-grid">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-image-empty">📸</span>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-code">Bodysuit Unisex Verde Oliva</div>
+                        <div class="product-name">Bodysuit Unisex Manga Corta</div>
+                        <div class="product-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Categoría:</span>
+                                <span>Bodysuits</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Color:</span>
+                                <span>Verde Oliva</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Stock:</span>
+                                <span>3M: 2, 6M: 1, 9M: 3, 12M: 2</span>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <span class="detail-label">Notas:</span>
+                                <span>Manga Corta</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="stock-indicator stock-high">
+                            Stock: 8 unidades
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="stock-controls">
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="decreaseStock(1764616834984)">−</button>
+                                <div class="stock-display">8</div>
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="increaseStock(1764616834984)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions" style="margin-top: var(--spacing-sm);">
+                            <button type="button" class="btn btn-sm btn-secondary action-btn" onclick="openEditProductModal(1764616834984)">
+                                ✏️ Editar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-danger action-btn" onclick="openDeleteConfirm(1764616834984)">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-image-empty">📸</span>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-code">Bodysuit Unisex Verde Oliva Larga</div>
+                        <div class="product-name">Bodysuit Unisex Manga Larga</div>
+                        <div class="product-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Categoría:</span>
+                                <span>Bodysuits</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Color:</span>
+                                <span>Verde Oliva</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Stock:</span>
+                                <span>RN: 3, 6M: 2, 9M: 1, 12M: 1</span>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <span class="detail-label">Notas:</span>
+                                <span>Manga Larga</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="stock-indicator stock-high">
+                            Stock: 7 unidades
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="stock-controls">
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="decreaseStock(1764617334303)">−</button>
+                                <div class="stock-display">7</div>
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="increaseStock(1764617334303)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions" style="margin-top: var(--spacing-sm);">
+                            <button type="button" class="btn btn-sm btn-secondary action-btn" onclick="openEditProductModal(1764617334303)">
+                                ✏️ Editar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-danger action-btn" onclick="openDeleteConfirm(1764617334303)">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-image-empty">📸</span>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-code">Bodysuit Unisex Azul Cielo Tipo 1 Larga</div>
+                        <div class="product-name">Bodysuit Unisex Manga Larga</div>
+                        <div class="product-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Categoría:</span>
+                                <span>Bodysuits</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Color:</span>
+                                <span>Azul Cielo Tipo 1</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Stock:</span>
+                                <span>RN: 2, 3M: 1, 6M: 2, 9M: 1, 12M: 1</span>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <span class="detail-label">Notas:</span>
+                                <span>Manga Larga - No hay manga corta en este modelo</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="stock-indicator stock-high">
+                            Stock: 7 unidades
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="stock-controls">
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="decreaseStock(1764617570749)">−</button>
+                                <div class="stock-display">7</div>
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="increaseStock(1764617570749)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions" style="margin-top: var(--spacing-sm);">
+                            <button type="button" class="btn btn-sm btn-secondary action-btn" onclick="openEditProductModal(1764617570749)">
+                                ✏️ Editar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-danger action-btn" onclick="openDeleteConfirm(1764617570749)">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-image-empty">📸</span>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-code">Bodysuit Unisex Azul Cielo Tipo 2 Corta</div>
+                        <div class="product-name">Bodysuit Unisex Manga Corta</div>
+                        <div class="product-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Categoría:</span>
+                                <span>Bodysuits</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Color:</span>
+                                <span>Azul Cielo Tipo 2</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Stock:</span>
+                                <span>3M: 2, 6M: 1, 9M: 3, 12M: 2</span>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <span class="detail-label">Notas:</span>
+                                <span>Manga Corta</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="stock-indicator stock-high">
+                            Stock: 8 unidades
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="stock-controls">
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="decreaseStock(1764617719706)">−</button>
+                                <div class="stock-display">8</div>
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="increaseStock(1764617719706)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions" style="margin-top: var(--spacing-sm);">
+                            <button type="button" class="btn btn-sm btn-secondary action-btn" onclick="openEditProductModal(1764617719706)">
+                                ✏️ Editar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-danger action-btn" onclick="openDeleteConfirm(1764617719706)">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-image-empty">📸</span>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-code">Bodysuit Unisex Azul Cielo Tipo 2 Larga</div>
+                        <div class="product-name">Bodysuit Unisex Manga Larga</div>
+                        <div class="product-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Categoría:</span>
+                                <span>Bodysuits</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Color:</span>
+                                <span>Azul Cielo Tipo 2</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Stock:</span>
+                                <span>6M: 2, 9M: 2</span>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <span class="detail-label">Notas:</span>
+                                <span>Manga Larga</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="stock-indicator stock-medium">
+                            Stock: 4 unidades
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="stock-controls">
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="decreaseStock(1764617823362)">−</button>
+                                <div class="stock-display">4</div>
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="increaseStock(1764617823362)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions" style="margin-top: var(--spacing-sm);">
+                            <button type="button" class="btn btn-sm btn-secondary action-btn" onclick="openEditProductModal(1764617823362)">
+                                ✏️ Editar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-danger action-btn" onclick="openDeleteConfirm(1764617823362)">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-image-empty">📸</span>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-code">Bodysuit Unisex Azul Navy Larga</div>
+                        <div class="product-name">Bodysuit Unisex Manga Larga</div>
+                        <div class="product-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Categoría:</span>
+                                <span>Bodysuits</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Color:</span>
+                                <span>Azul Navy</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Stock:</span>
+                                <span>6M: 2, 9M: 2</span>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <span class="detail-label">Notas:</span>
+                                <span>Manga Larga</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="stock-indicator stock-medium">
+                            Stock: 4 unidades
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="stock-controls">
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="decreaseStock(1764619432870)">−</button>
+                                <div class="stock-display">4</div>
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="increaseStock(1764619432870)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions" style="margin-top: var(--spacing-sm);">
+                            <button type="button" class="btn btn-sm btn-secondary action-btn" onclick="openEditProductModal(1764619432870)">
+                                ✏️ Editar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-danger action-btn" onclick="openDeleteConfirm(1764619432870)">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-image-empty">📸</span>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-code">Bodysuit Unisex Azul Navy Corta</div>
+                        <div class="product-name">Bodysuit Unisex Manga Corta</div>
+                        <div class="product-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Categoría:</span>
+                                <span>Bodysuits</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Color:</span>
+                                <span>Azul Navy</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Stock:</span>
+                                <span>3M: 2, 6M: 1, 9M: 1</span>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <span class="detail-label">Notas:</span>
+                                <span>Manga Corta</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="stock-indicator stock-medium">
+                            Stock: 4 unidades
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="stock-controls">
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="decreaseStock(1764620031236)">−</button>
+                                <div class="stock-display">4</div>
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="increaseStock(1764620031236)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions" style="margin-top: var(--spacing-sm);">
+                            <button type="button" class="btn btn-sm btn-secondary action-btn" onclick="openEditProductModal(1764620031236)">
+                                ✏️ Editar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-danger action-btn" onclick="openDeleteConfirm(1764620031236)">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-image-empty">📸</span>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-code">Bodysuit Unisex Gris Corta</div>
+                        <div class="product-name">Bodysuit Unisex Manga Corta</div>
+                        <div class="product-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Categoría:</span>
+                                <span>Bodysuits</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Color:</span>
+                                <span>Gris</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Stock:</span>
+                                <span>3M: 2, 6M: 1, 9M: 3, 12M: 2</span>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <span class="detail-label">Notas:</span>
+                                <span>Manga Corta</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="stock-indicator stock-high">
+                            Stock: 8 unidades
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="stock-controls">
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="decreaseStock(1764620145723)">−</button>
+                                <div class="stock-display">8</div>
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="increaseStock(1764620145723)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions" style="margin-top: var(--spacing-sm);">
+                            <button type="button" class="btn btn-sm btn-secondary action-btn" onclick="openEditProductModal(1764620145723)">
+                                ✏️ Editar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-danger action-btn" onclick="openDeleteConfirm(1764620145723)">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-image-empty">📸</span>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-code">Bodysuit Unisex Gris Larga</div>
+                        <div class="product-name">Bodysuit Unisex Manga Larga</div>
+                        <div class="product-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Categoría:</span>
+                                <span>Bodysuits</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Color:</span>
+                                <span>Gris</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Stock:</span>
+                                <span>RN: 2, 3M: 1, 6M: 4, 9M: 3, 12M: 1</span>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <span class="detail-label">Notas:</span>
+                                <span>Manga Larga</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="stock-indicator stock-high">
+                            Stock: 11 unidades
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="stock-controls">
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="decreaseStock(1764620268756)">−</button>
+                                <div class="stock-display">11</div>
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="increaseStock(1764620268756)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions" style="margin-top: var(--spacing-sm);">
+                            <button type="button" class="btn btn-sm btn-secondary action-btn" onclick="openEditProductModal(1764620268756)">
+                                ✏️ Editar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-danger action-btn" onclick="openDeleteConfirm(1764620268756)">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-image-empty">📸</span>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-code">Bodysuit Unisex Bicolor Navy/Gris Larga</div>
+                        <div class="product-name">Bodysuit Unisex Manga Larga</div>
+                        <div class="product-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Categoría:</span>
+                                <span>Bodysuits</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Color:</span>
+                                <span>Bicolor (Navy/Gris)</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Stock:</span>
+                                <span>RN: 2, 3M: 1, 6M: 2, 9M: 1, 12M: 1</span>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <span class="detail-label">Notas:</span>
+                                <span>Manga Larga - Bicolor</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="stock-indicator stock-high">
+                            Stock: 7 unidades
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="stock-controls">
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="decreaseStock(1764620398636)">−</button>
+                                <div class="stock-display">7</div>
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="increaseStock(1764620398636)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions" style="margin-top: var(--spacing-sm);">
+                            <button type="button" class="btn btn-sm btn-secondary action-btn" onclick="openEditProductModal(1764620398636)">
+                                ✏️ Editar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-danger action-btn" onclick="openDeleteConfirm(1764620398636)">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-image-empty">📸</span>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-code">Bodysuit Unisex Blanco Sin Manga</div>
+                        <div class="product-name">Bodysuit Unisex Sin Manga</div>
+                        <div class="product-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Categoría:</span>
+                                <span>Bodysuits</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Color:</span>
+                                <span>Blanco</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Stock:</span>
+                                <span>RN: 9, 3M: 13, 6M: 5, 9M: 20, 12M: 15, 18M: 4, 24M: 1</span>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <span class="detail-label">Notas:</span>
+                                <span>Sin Manga</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="stock-indicator stock-high">
+                            Stock: 67 unidades
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="stock-controls">
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="decreaseStock(1764620597386)">−</button>
+                                <div class="stock-display">67</div>
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="increaseStock(1764620597386)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions" style="margin-top: var(--spacing-sm);">
+                            <button type="button" class="btn btn-sm btn-secondary action-btn" onclick="openEditProductModal(1764620597386)">
+                                ✏️ Editar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-danger action-btn" onclick="openDeleteConfirm(1764620597386)">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-image-empty">📸</span>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-code">Bodysuit Unisex Blanco Corta</div>
+                        <div class="product-name">Bodysuit Unisex Manga Corta</div>
+                        <div class="product-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Categoría:</span>
+                                <span>Bodysuits</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Color:</span>
+                                <span>Blanco</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Stock:</span>
+                                <span>3M: 1, 6M: 1, 9M: 2, 12M: 2</span>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <span class="detail-label">Notas:</span>
+                                <span>Manga Corta</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="stock-indicator stock-high">
+                            Stock: 6 unidades
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="stock-controls">
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="decreaseStock(1764620766995)">−</button>
+                                <div class="stock-display">6</div>
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="increaseStock(1764620766995)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions" style="margin-top: var(--spacing-sm);">
+                            <button type="button" class="btn btn-sm btn-secondary action-btn" onclick="openEditProductModal(1764620766995)">
+                                ✏️ Editar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-danger action-btn" onclick="openDeleteConfirm(1764620766995)">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-image-empty">📸</span>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-code">Bodysuit para Niñas Blanco Corta</div>
+                        <div class="product-name">Bodysuit para Niñas Manga Corta</div>
+                        <div class="product-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Categoría:</span>
+                                <span>Bodysuits</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Color:</span>
+                                <span>Blanco</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Stock:</span>
+                                <span>RN: 2, 3M: 2, 6M: 2, 9M: 2, 12M: 2</span>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <span class="detail-label">Notas:</span>
+                                <span>Manga Corta - Para Niñas</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="stock-indicator stock-high">
+                            Stock: 10 unidades
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="stock-controls">
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="decreaseStock(1764620906504)">−</button>
+                                <div class="stock-display">10</div>
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="increaseStock(1764620906504)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions" style="margin-top: var(--spacing-sm);">
+                            <button type="button" class="btn btn-sm btn-secondary action-btn" onclick="openEditProductModal(1764620906504)">
+                                ✏️ Editar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-danger action-btn" onclick="openDeleteConfirm(1764620906504)">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-image-empty">📸</span>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-code">Bodysuit para Niñas Gris Corta</div>
+                        <div class="product-name">Bodysuit para Niñas Manga Corta</div>
+                        <div class="product-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Categoría:</span>
+                                <span>Bodysuits</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Color:</span>
+                                <span>Gris</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Stock:</span>
+                                <span>RN: 2, 3M: 2, 6M: 2, 9M: 2, 12M: 2</span>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <span class="detail-label">Notas:</span>
+                                <span>Manga Corta - Para Niñas</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="stock-indicator stock-high">
+                            Stock: 10 unidades
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="stock-controls">
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="decreaseStock(1764621013256)">−</button>
+                                <div class="stock-display">10</div>
+                                <button type="button" class="btn btn-sm btn-secondary stock-btn" onclick="increaseStock(1764621013256)">+</button>
+                            </div>
+                        </div>
+
+                        <div class="product-actions" style="margin-top: var(--spacing-sm);">
+                            <button type="button" class="btn btn-sm btn-secondary action-btn" onclick="openEditProductModal(1764621013256)">
+                                ✏️ Editar
+                            </button>
+                            <button type="button" class="btn btn-sm btn-danger action-btn" onclick="openDeleteConfirm(1764621013256)">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 
     <!-- MODAL AGREGAR/EDITAR PRODUCTO -->
@@ -763,47 +1471,28 @@
                 <button class="modal-close" onclick="closeProductModal()">✕</button>
             </div>
 
-            <div class="image-preview" id="imagePreview">
-                <span class="product-image-empty">📸</span>
-            </div>
+            <div class="image-preview" id="imagePreview"><span class="product-image-empty">📸</span></div>
 
             <form id="productForm" onsubmit="saveProduct(event)">
                 <div class="form-group">
                     <label class="form-label">Imagen del Producto</label>
-                    <input 
-                        type="file" 
-                        class="form-input" 
-                        id="imageInput" 
-                        accept="image/*"
-                        onchange="previewImage(event)"
-                    >
+                    <input type="file" class="form-input" id="imageInput" accept="image/*" onchange="previewImage(event)">
                     <p class="text-small" style="margin-top: var(--spacing-xs);">JPG, PNG o WebP (máx 2MB)</p>
                 </div>
 
                 <div class="form-group">
                     <label class="form-label">Código/Modelo *</label>
-                    <input 
-                        type="text" 
-                        class="form-input" 
-                        id="productCode" 
-                        placeholder="ej: C-JOY-07"
-                        required
-                    >
+                    <input type="text" class="form-input" id="productCode" placeholder="ej: C-JOY-07" required="">
                 </div>
 
                 <div class="form-group">
                     <label class="form-label">Nombre del Producto</label>
-                    <input 
-                        type="text" 
-                        class="form-input" 
-                        id="productName" 
-                        placeholder="ej: Bodysuit Blanco Sin Manga"
-                    >
+                    <input type="text" class="form-input" id="productName" placeholder="ej: Bodysuit Blanco Sin Manga">
                 </div>
 
                 <div class="form-group">
                     <label class="form-label">Categoría *</label>
-                    <select class="form-select" id="productCategory" required>
+                    <select class="form-select" id="productCategory" required="">
                         <option value="">Selecciona una categoría</option>
                         <option value="Bodysuits">Bodysuits</option>
                         <option value="Chaquetas">Chaquetas</option>
@@ -814,7 +1503,7 @@
 
                 <div class="form-group">
                     <label class="form-label">Color *</label>
-                    <select class="form-select" id="productColor" required>
+                    <select class="form-select" id="productColor" required="">
                         <option value="">Selecciona un color</option>
                         <option value="Blanco">Blanco</option>
                         <option value="Gris">Gris</option>
@@ -831,18 +1520,33 @@
                 <div class="form-group">
                     <label class="form-label">Stock por Talla *</label>
                     <p class="text-small" style="margin-bottom: var(--spacing-md); color: var(--color-primary);">Ingresa la cantidad disponible para cada talla</p>
-                    <div id="sizeStockContainer" style="display: grid; grid-template-columns: 1fr; gap: var(--spacing-sm); margin-bottom: var(--spacing-md);">
-                        <!-- Se genera dinámicamente con JavaScript -->
-                    </div>
+                    <div id="sizeStockContainer" style="display: grid; grid-template-columns: 1fr; gap: var(--spacing-sm); margin-bottom: var(--spacing-md);"><div class="size-row">
+                    <label class="form-label" style="margin-bottom: 0;">RN</label>
+                    <input type="number" class="size-stock-input" data-size="RN" value="0" min="0" placeholder="0">
+                </div><div class="size-row">
+                    <label class="form-label" style="margin-bottom: 0;">3M</label>
+                    <input type="number" class="size-stock-input" data-size="3M" value="0" min="0" placeholder="0">
+                </div><div class="size-row">
+                    <label class="form-label" style="margin-bottom: 0;">6M</label>
+                    <input type="number" class="size-stock-input" data-size="6M" value="0" min="0" placeholder="0">
+                </div><div class="size-row">
+                    <label class="form-label" style="margin-bottom: 0;">9M</label>
+                    <input type="number" class="size-stock-input" data-size="9M" value="0" min="0" placeholder="0">
+                </div><div class="size-row">
+                    <label class="form-label" style="margin-bottom: 0;">12M</label>
+                    <input type="number" class="size-stock-input" data-size="12M" value="0" min="0" placeholder="0">
+                </div><div class="size-row">
+                    <label class="form-label" style="margin-bottom: 0;">18M</label>
+                    <input type="number" class="size-stock-input" data-size="18M" value="0" min="0" placeholder="0">
+                </div><div class="size-row">
+                    <label class="form-label" style="margin-bottom: 0;">24M</label>
+                    <input type="number" class="size-stock-input" data-size="24M" value="0" min="0" placeholder="0">
+                </div></div>
                 </div>
 
                 <div class="form-group">
                     <label class="form-label">Notas (Opcional)</label>
-                    <textarea 
-                        class="form-textarea" 
-                        id="productNotes" 
-                        placeholder="Marca, tipo de manga, observaciones..."
-                    ></textarea>
+                    <textarea class="form-textarea" id="productNotes" placeholder="Marca, tipo de manga, observaciones..."></textarea>
                 </div>
 
                 <div class="modal-actions">
@@ -1336,5 +2040,6 @@
             }
         });
     </script>
-</body>
-</html>
+
+
+</body></html>
